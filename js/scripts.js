@@ -235,3 +235,35 @@ const originalShowPage = showPage;
 showPage = function (pageId) {
   smoothTransition(() => originalShowPage(pageId));
 };
+
+// Energy Cost Calculator
+function calculateEnergyCost() {
+  const watts = parseFloat(document.getElementById("tvWattage").value) || 85;
+  const hoursPerDay =
+    parseFloat(document.getElementById("hoursPerDay").value) || 5.5;
+  const costPerKWh =
+    parseFloat(document.getElementById("costPerKWh").value) || 0.3;
+
+  // Calculate annual cost
+  const dailyKWh = (watts * hoursPerDay) / 1000;
+  const annualKWh = dailyKWh * 365;
+  const annualCost = annualKWh * costPerKWh;
+
+  // Update display
+  document.getElementById("annualCost").textContent =
+    "$" + annualCost.toFixed(2);
+}
+
+// Add event listeners to calculator inputs
+document.addEventListener("DOMContentLoaded", function () {
+  const inputs = ["tvWattage", "hoursPerDay", "costPerKWh"];
+  inputs.forEach((inputId) => {
+    const input = document.getElementById(inputId);
+    if (input) {
+      input.addEventListener("input", calculateEnergyCost);
+    }
+  });
+
+  // Calculate initial value
+  calculateEnergyCost();
+});

@@ -148,7 +148,7 @@ body {
 
 .section-header {
     text-align: center;
-    margin-bottom: 3rem;
+    
 }
 
 .section-header h2 {
@@ -550,4 +550,269 @@ body {
 
 .fade-in-up {
     animation: fadeInUp 0.6s ease-out;
+}
+
+/* Additional styles for enhanced data story */
+.insight-box {
+    background: #E8F5E9;
+    border-left: 4px solid #4CAF50;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 8px;
+    max-width: 900px;
+}
+
+.insight-box h3 {
+    color: #2E7D32;
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+}
+
+.insight-box strong {
+    color: #1B5E20;
+}
+
+.data-note {
+    background: #FFF3E0;
+    border-left: 4px solid #FF9800;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem auto;
+    border-radius: 8px;
+    max-width: 900px;
+}
+
+.data-note strong {
+    color: #E65100;
+}
+
+.cost-comparison {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem auto;
+    max-width: 900px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cost-comparison h3 {
+    color: #795548;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.cost-card {
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.cost-card:hover {
+    transform: translateY(-5px);
+}
+
+.cost-card.efficient {
+    background: #E8F5E9;
+    border: 2px solid #4CAF50;
+}
+
+.cost-card.inefficient {
+    background: #FFEBEE;
+    border: 2px solid #F44336;
+}
+
+.cost-amount {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.cost-card.efficient .cost-amount {
+    color: #2E7D32;
+}
+
+.cost-card.inefficient .cost-amount {
+    color: #C62828;
+}
+
+.cost-card p {
+    color: #666;
+    line-height: 1.4;
+}
+
+.savings-note {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #795548;
+}
+
+.savings-note strong {
+    color: #2E7D32;
+}
+
+.checklist {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem auto;
+    max-width: 900px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.checklist h2 {
+    color: #795548;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.checklist-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #FFFDE7;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.checklist-item:hover {
+    background: #FFF9C4;
+    transform: translateX(5px);
+}
+
+.checklist-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.checklist-content strong {
+    color: #795548;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.checklist-content {
+    color: #666;
+}
+
+.quick-tip {
+    background: linear-gradient(135deg, #FFA000, #FF8F00);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.quick-tip strong {
+    font-size: 1.1rem;
+}
+
+.story-intro {
+    background: white;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.story-intro p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.chart-insight {
+    max-width: 900px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+}
+
+.chart-insight p {
+    color: #666;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.calculator-widget {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem auto;
+    max-width: 600px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-widget h3 {
+    color: #795548;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    display: block;
+    color: #795548;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #E0E0E0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #FFA000;
+}
+
+.calculator-result {
+    background: #E8F5E9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.calculator-result .annual-cost {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2E7D32;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .comparison-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cost-amount {
+        font-size: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
 }
